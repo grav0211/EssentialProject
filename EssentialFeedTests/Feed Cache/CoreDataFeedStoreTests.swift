@@ -1,16 +1,19 @@
 //
-//  CoreDataFeedStore.swift
+//  CoreDataFeedStoreTests.swift
 //  EssentialFeedTests
 //
 //  Created by Alexandre Gravelle on 2021-03-15.
 //
 
 import XCTest
+import EssentialFeed
 
-class CoreDataFeedStore: XCTestCase, FeedStoreSpecs {
+class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     
     func test_retrieve_deliversEmptyOnEmptyCache() {
+        let sut = makeSUT()
         
+        assertThatRetrieveDeliversEmptyOnEmptyCache(on: sut)
     }
     
     func test_retrieve_hasNoSideEffectsOnEmptyCache() {
@@ -55,5 +58,13 @@ class CoreDataFeedStore: XCTestCase, FeedStoreSpecs {
     
     func test_storeSideEffects_runSerially() {
         
+    }
+    
+    // MARK: - Helpers
+    
+    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> FeedStore {
+        let sut = CoreDataFeedStore()
+        trackForMemoryLeaks(sut, file: file, line: line)
+        return sut
     }
 }
