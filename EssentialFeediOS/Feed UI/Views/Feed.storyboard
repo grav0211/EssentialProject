@@ -125,6 +125,7 @@
                         <connections>
                             <outlet property="dataSource" destination="07l-QY-HnW" id="wcm-nq-ht5"/>
                             <outlet property="delegate" destination="07l-QY-HnW" id="PKu-86-Lye"/>
+                            <outlet property="prefetchDataSource" destination="07l-QY-HnW" id="3tO-0d-aP4"/>
                         </connections>
                     </tableView>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="RfN-ey-4sW">
