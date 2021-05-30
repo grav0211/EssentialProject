@@ -76,6 +76,9 @@
                                                             <state key="normal" title="↻">
                                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="XMa-0M-Xnb" eventType="touchUpInside" id="4i4-Qb-CTo"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -120,6 +123,14 @@
                                         <constraint firstItem="b35-xf-XMG" firstAttribute="top" secondItem="tXJ-r1-tXU" secondAttribute="topMargin" priority="999" constant="6" id="lBv-vk-gLc"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="6xf-Em-1cg" id="Oqp-op-S16"/>
+                                    <outlet property="feedImageContainer" destination="jDr-Ma-Slw" id="e5x-dB-jhm"/>
+                                    <outlet property="feedImageRetryButton" destination="J5m-Jx-AtI" id="9cY-oZ-AjA"/>
+                                    <outlet property="feedImageView" destination="jZU-O5-W1O" id="qds-Wl-L5s"/>
+                                    <outlet property="locationContainer" destination="bpj-A6-2TE" id="tm4-qW-bQI"/>
+                                    <outlet property="locationLabel" destination="aea-mG-KK8" id="jjE-Qp-nhA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
