@@ -12,7 +12,7 @@ struct FeedLoadingViewModel {
     let isLoading: Bool
 }
 
-protocol FeedLoadingView: class {
+protocol FeedLoadingView: AnyObject {
     func display(_ viewModel: FeedLoadingViewModel)
 }
 
