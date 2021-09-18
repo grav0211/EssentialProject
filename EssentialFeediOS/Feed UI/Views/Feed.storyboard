@@ -37,7 +37,6 @@
                             </constraints>
                             <connections>
                                 <outlet property="label" destination="Ejg-dK-Q7m" id="Iw2-zM-EhJ"/>
-                                <outletCollection property="gestureRecognizers" destination="eoK-Dx-ZmD" id="0g1-0D-bdd"/>
                             </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="886-OX-j5X">

@@ -5,8 +5,8 @@
 //  Created by Alexandre Gravelle on 2021-06-05.
 //
 
-import Foundation
 import UIKit
+import EssentialFeed
 
 final class FeedViewAdapter: FeedView {
     private weak var controller: FeedViewController?

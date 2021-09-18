@@ -33,7 +33,7 @@ public final class FeedUIComposer {
             let storyboard = UIStoryboard(name: "Feed", bundle: bundle)
             let feedController = storyboard.instantiateInitialViewController() as! FeedViewController
             feedController.delegate = delegate
-            feedController.title = FeedPresenter.title
+            feedController.title = title
             return feedController
         }
 }
