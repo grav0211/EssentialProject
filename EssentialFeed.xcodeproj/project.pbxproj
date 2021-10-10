@@ -52,7 +52,7 @@
 		1AC71F0225DC92FF008BD1C2 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC71F0125DC92FF008BD1C2 /* LocalFeedImage.swift */; };
 		1ACD7E6026FB41F700C0AABB /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFCAC22265AAD7C001A417C /* FeedImageDataLoader.swift */; };
 		1ACD7E6226FB426000C0AABB /* LoadFeedImageDataFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD7E6126FB426000C0AABB /* LoadFeedImageDataFromRemoteUseCaseTests.swift */; };
-		1ACD9B422713571600BB6115 /* LocalFeedImageDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD9B412713571600BB6115 /* LocalFeedImageDataLoaderTests.swift */; };
+		1ACD9B422713571600BB6115 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD9B412713571600BB6115 /* LoadFeedImageDataFromCacheUseCaseTests.swift */; };
 		1ACD9B4427135EF000BB6115 /* FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD9B4327135EF000BB6115 /* FeedImageDataStore.swift */; };
 		1ACD9B4627135F1B00BB6115 /* LocalFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD9B4527135F1B00BB6115 /* LocalFeedImageDataLoader.swift */; };
 		1AD11AEE26F217E1004773BD /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD11AED26F217E1004773BD /* UIRefreshControl+Helpers.swift */; };
@@ -193,7 +193,7 @@
 		1AC71EFC25DC92B7008BD1C2 /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
 		1AC71F0125DC92FF008BD1C2 /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
 		1ACD7E6126FB426000C0AABB /* LoadFeedImageDataFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedImageDataFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
-		1ACD9B412713571600BB6115 /* LocalFeedImageDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoaderTests.swift; sourceTree = "<group>"; };
+		1ACD9B412713571600BB6115 /* LoadFeedImageDataFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedImageDataFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		1ACD9B4327135EF000BB6115 /* FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStore.swift; sourceTree = "<group>"; };
 		1ACD9B4527135F1B00BB6115 /* LocalFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		1AD11AED26F217E1004773BD /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
@@ -395,7 +395,7 @@
 				1A77244B25E1DFFE00691D74 /* LoadFeedFromCacheUseCaseTests.swift */,
 				1A77245D25E33F0F00691D74 /* ValidateFeedCacheUseCaseTests.swift */,
 				1ADDD61A26002C3700024FE4 /* CoreDataFeedStoreTests.swift */,
-				1ACD9B412713571600BB6115 /* LocalFeedImageDataLoaderTests.swift */,
+				1ACD9B412713571600BB6115 /* LoadFeedImageDataFromCacheUseCaseTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -947,7 +947,7 @@
 				1AD11B0826F67C2C004773BD /* FeedLocalizationTests.swift in Sources */,
 				1AC716D525D205DB008BD1C2 /* URLSessionHTTPClientTests.swift in Sources */,
 				1ADDD61B26002C3700024FE4 /* CoreDataFeedStoreTests.swift in Sources */,
-				1ACD9B422713571600BB6115 /* LocalFeedImageDataLoaderTests.swift in Sources */,
+				1ACD9B422713571600BB6115 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */,
 				1AB6544527121D6D00F10A91 /* HTTPClientSpy.swift in Sources */,
 				1A77245225E1E11100691D74 /* FeedStoreSpy.swift in Sources */,
 				1A77246825E3439100691D74 /* SharedTestHelpers.swift in Sources */,
