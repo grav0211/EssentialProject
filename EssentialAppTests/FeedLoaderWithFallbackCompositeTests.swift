@@ -69,7 +69,7 @@ class FeedLoaderWithFallbackCompositeTests: XCTestCase {
     }
     
     private class LoaderStub: FeedLoader {
-        private let result:  FeedLoader.Result
+        private let result: FeedLoader.Result
         
         init(result: FeedLoader.Result) {
             self.result = result
