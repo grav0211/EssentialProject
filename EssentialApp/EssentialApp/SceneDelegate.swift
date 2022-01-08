@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        let remoteURL = URL(string: "https://static1.squarespace.com/static/5891c5b8d1758ec68ef5dbc2/t/5d1c78f21e661a0001ce7cfd/1562147059075/feed-case-study-v1-api-feed.json")!
+        let remoteURL = URL(string: "https://ile-api.essentialdeveloper.com/essential-feed/v1/feed")!
         
         let removeClient = URLSessionHTTPClient(session: URLSession(configuration: .ephemeral))
         let removeFeedLoader = RemoteFeedLoader(url: remoteURL, client: removeClient)
@@ -36,7 +36,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window?.rootViewController = FeedUIComposer.feedComposedWith(
             feedLoader: FeedLoaderWithFallbackComposite(
-                primary: removeFeedLoader,
+                primary: FeedLoaderCacheDecorator(
+                    decoratee: removeFeedLoader,
+                    cache: localFeedLoader),
                 fallback: localFeedLoader
             ),
             imageLoader: FeedImageDataLoaderWithFallbackComposite(
