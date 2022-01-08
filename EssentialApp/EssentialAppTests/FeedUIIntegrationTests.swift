@@ -62,7 +62,7 @@ class FeedUIIntegrationTests: XCTestCase {
         assertThat(sut, isRendering: [])
         
         loader.completeFeedLoading(with: [image0], at: 0)
-        XCTAssertEqual(sut.numbeOfRenderedFeedImageViews(), 1)
+        XCTAssertEqual(sut.numberOfRenderedFeedImageViews(), 1)
         assertThat(sut, isRendering: [image0])
         
         sut.simulateUserInitiatedFeedReload()
@@ -310,8 +310,8 @@ class FeedUIIntegrationTests: XCTestCase {
     }
     
     private func assertThat(_ sut: FeedViewController, isRendering feed: [FeedImage], file: StaticString = #filePath, line: UInt = #line) {
-        guard sut.numbeOfRenderedFeedImageViews() == feed.count else {
-            return XCTFail("Expected \(feed.count) images, got \(sut.numbeOfRenderedFeedImageViews()) instead.", file: file, line: line)
+        guard sut.numberOfRenderedFeedImageViews() == feed.count else {
+            return XCTFail("Expected \(feed.count) images, got \(sut.numberOfRenderedFeedImageViews()) instead.", file: file, line: line)
         }
         
         feed.enumerated().forEach { index, image in
