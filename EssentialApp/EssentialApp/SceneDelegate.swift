@@ -22,9 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let remoteURL = URL(string: "https://ile-api.essentialdeveloper.com/essential-feed/v1/feed")!
         
-        let removeClient = URLSessionHTTPClient(session: URLSession(configuration: .ephemeral))
-        let removeFeedLoader = RemoteFeedLoader(url: remoteURL, client: removeClient)
-        let removeImageLoader = RemoteFeedImageDataLoader(client: removeClient)
+        let remoteClient = URLSessionHTTPClient(session: URLSession(configuration: .ephemeral))
+        let remoteFeedLoader = RemoteFeedLoader(url: remoteURL, client: remoteClient)
+        let remoteImageLoader = RemoteFeedImageDataLoader(client: remoteClient)
         
         let localStoreURL = NSPersistentContainer
             .defaultDirectoryURL()
@@ -37,13 +37,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = FeedUIComposer.feedComposedWith(
             feedLoader: FeedLoaderWithFallbackComposite(
                 primary: FeedLoaderCacheDecorator(
-                    decoratee: removeFeedLoader,
+                    decoratee: remoteFeedLoader,
                     cache: localFeedLoader),
                 fallback: localFeedLoader
             ),
             imageLoader: FeedImageDataLoaderWithFallbackComposite(
                 primary: localImageLoader,
-                fallback: removeImageLoader)
+                fallback: FeedImageDataLoaderCacheDecorator(
+                    decoratee: remoteImageLoader,
+                    cache: localImageLoader)
+            )
         )
     }
 
