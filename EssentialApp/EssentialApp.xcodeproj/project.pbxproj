@@ -11,7 +11,6 @@
 		EF7738D0278A16EC004568BD /* FeedImageDataLoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738CF278A16EC004568BD /* FeedImageDataLoaderSpy.swift */; };
 		EF7738D2278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738D1278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift */; };
 		EF7738D6278A1ABF004568BD /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738D5278A1ABF004568BD /* FeedImageDataLoaderCacheDecorator.swift */; };
-		EF7738DE278A25E0004568BD /* EssentialAppUIAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738DD278A25E0004568BD /* EssentialAppUIAcceptanceTests.swift */; };
 		EF7738E6278A2BC2004568BD /* DebuggingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738E5278A2BC2004568BD /* DebuggingSceneDelegate.swift */; };
 		EF7738E8278A50E0004568BD /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738E7278A50E0004568BD /* SceneDelegateTests.swift */; };
 		EF7738EF278A54E8004568BD /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738ED278A54E8004568BD /* FeedViewAdapter.swift */; };
@@ -51,13 +50,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EF7738E0278A25E1004568BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EF8EBFE727372CBB00866A96 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EF8EBFEE27372CBB00866A96;
-			remoteInfo = EssentialApp;
-		};
 		EF8EC00627372CBE00866A96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EF8EBFE727372CBB00866A96 /* Project object */;
@@ -87,9 +79,6 @@
 		EF7738CF278A16EC004568BD /* FeedImageDataLoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderSpy.swift; sourceTree = "<group>"; };
 		EF7738D1278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
 		EF7738D5278A1ABF004568BD /* FeedImageDataLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderCacheDecorator.swift; sourceTree = "<group>"; };
-		EF7738DB278A25E0004568BD /* EssentialAppUIAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUIAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF7738DD278A25E0004568BD /* EssentialAppUIAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUIAcceptanceTests.swift; sourceTree = "<group>"; };
-		EF7738DF278A25E1004568BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF7738E5278A2BC2004568BD /* DebuggingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingSceneDelegate.swift; sourceTree = "<group>"; };
 		EF7738E7278A50E0004568BD /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		EF7738E9278A54E8004568BD /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
@@ -131,13 +120,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EF7738D8278A25E0004568BD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EF8EBFEC27372CBB00866A96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,15 +139,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EF7738DC278A25E0004568BD /* EssentialAppUIAcceptanceTests */ = {
-			isa = PBXGroup;
-			children = (
-				EF7738DD278A25E0004568BD /* EssentialAppUIAcceptanceTests.swift */,
-				EF7738DF278A25E1004568BD /* Info.plist */,
-			);
-			path = EssentialAppUIAcceptanceTests;
-			sourceTree = "<group>";
-		};
 		EF7BE43D27381F2300C3A9B2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +163,6 @@
 			children = (
 				EF8EBFF127372CBB00866A96 /* EssentialApp */,
 				EF8EC00827372CBE00866A96 /* EssentialAppTests */,
-				EF7738DC278A25E0004568BD /* EssentialAppUIAcceptanceTests */,
 				EF8EBFF027372CBB00866A96 /* Products */,
 				EF8EC07F27372FD000866A96 /* Frameworks */,
 			);
@@ -201,7 +173,6 @@
 			children = (
 				EF8EBFEF27372CBB00866A96 /* EssentialApp.app */,
 				EF8EC00527372CBE00866A96 /* EssentialAppTests.xctest */,
-				EF7738DB278A25E0004568BD /* EssentialAppUIAcceptanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,24 +230,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EF7738DA278A25E0004568BD /* EssentialAppUIAcceptanceTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EF7738E2278A25E1004568BD /* Build configuration list for PBXNativeTarget "EssentialAppUIAcceptanceTests" */;
-			buildPhases = (
-				EF7738D7278A25E0004568BD /* Sources */,
-				EF7738D8278A25E0004568BD /* Frameworks */,
-				EF7738D9278A25E0004568BD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EF7738E1278A25E1004568BD /* PBXTargetDependency */,
-			);
-			name = EssentialAppUIAcceptanceTests;
-			productName = EssentialAppUIAcceptanceTests;
-			productReference = EF7738DB278A25E0004568BD /* EssentialAppUIAcceptanceTests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		EF8EBFEE27372CBB00866A96 /* EssentialApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF8EC01927372CBE00866A96 /* Build configuration list for PBXNativeTarget "EssentialApp" */;
@@ -322,10 +275,6 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					EF7738DA278A25E0004568BD = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = EF8EBFEE27372CBB00866A96;
-					};
 					EF8EBFEE27372CBB00866A96 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -351,19 +300,11 @@
 			targets = (
 				EF8EBFEE27372CBB00866A96 /* EssentialApp */,
 				EF8EC00427372CBE00866A96 /* EssentialAppTests */,
-				EF7738DA278A25E0004568BD /* EssentialAppUIAcceptanceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EF7738D9278A25E0004568BD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EF8EBFED27372CBB00866A96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,14 +325,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EF7738D7278A25E0004568BD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF7738DE278A25E0004568BD /* EssentialAppUIAcceptanceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EF8EBFEB27372CBB00866A96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,11 +375,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EF7738E1278A25E1004568BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EF8EBFEE27372CBB00866A96 /* EssentialApp */;
-			targetProxy = EF7738E0278A25E1004568BD /* PBXContainerItemProxy */;
-		};
 		EF8EC00727372CBE00866A96 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EF8EBFEE27372CBB00866A96 /* EssentialApp */;
@@ -474,44 +402,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EF7738E3278A25E1004568BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DSTY65G8SA;
-				INFOPLIST_FILE = EssentialAppUIAcceptanceTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.agrav065.EssentialAppUIAcceptanceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EssentialApp;
-			};
-			name = Debug;
-		};
-		EF7738E4278A25E1004568BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DSTY65G8SA;
-				INFOPLIST_FILE = EssentialAppUIAcceptanceTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.agrav065.EssentialAppUIAcceptanceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EssentialApp;
-			};
-			name = Release;
-		};
 		EF8EC01727372CBE00866A96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -716,15 +606,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF7738E2278A25E1004568BD /* Build configuration list for PBXNativeTarget "EssentialAppUIAcceptanceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EF7738E3278A25E1004568BD /* Debug */,
-				EF7738E4278A25E1004568BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		EF8EBFEA27372CBB00866A96 /* Build configuration list for PBXProject "EssentialApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
