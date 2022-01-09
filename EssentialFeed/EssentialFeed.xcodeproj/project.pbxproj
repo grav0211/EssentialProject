@@ -86,6 +86,7 @@
 		EF77390D278A698A004568BD /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77390C278A698A004568BD /* UIImage+TestHelpers.swift */; };
 		EF77390F278A6A95004568BD /* UITableView+HeaderSizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77390E278A6A94004568BD /* UITableView+HeaderSizing.swift */; };
 		EF773911278A6F33004568BD /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF773910278A6F33004568BD /* UIViewController+Snapshot.swift */; };
+		EF773913278A6F8B004568BD /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF773912278A6F8B004568BD /* XCTestCase+Snapshot.swift */; };
 		EF8C2550275114BB0000E12B /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C254F275114BB0000E12B /* FeedCache.swift */; };
 		EF8EBFD82736EA8700866A96 /* CacheFeedImageDataUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8EBFD72736EA8700866A96 /* CacheFeedImageDataUseCaseTests.swift */; };
 		EF8EBFDA2736F55500866A96 /* CoreDataFeedImageDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8EBFD92736F55500866A96 /* CoreDataFeedImageDataStoreTests.swift */; };
@@ -228,6 +229,7 @@
 		EF77390C278A698A004568BD /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 		EF77390E278A6A94004568BD /* UITableView+HeaderSizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HeaderSizing.swift"; sourceTree = "<group>"; };
 		EF773910278A6F33004568BD /* UIViewController+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snapshot.swift"; sourceTree = "<group>"; };
+		EF773912278A6F8B004568BD /* XCTestCase+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshot.swift"; sourceTree = "<group>"; };
 		EF8C254F275114BB0000E12B /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
 		EF8EBFD72736EA8700866A96 /* CacheFeedImageDataUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedImageDataUseCaseTests.swift; sourceTree = "<group>"; };
 		EF8EBFD92736F55500866A96 /* CoreDataFeedImageDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedImageDataStoreTests.swift; sourceTree = "<group>"; };
@@ -582,6 +584,7 @@
 			children = (
 				EF77390C278A698A004568BD /* UIImage+TestHelpers.swift */,
 				EF773910278A6F33004568BD /* UIViewController+Snapshot.swift */,
+				EF773912278A6F8B004568BD /* XCTestCase+Snapshot.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -855,6 +858,7 @@
 			files = (
 				1AD2B85B264180AD00AE624C /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				EF77390A278A67E7004568BD /* FeedSnapshotTests.swift in Sources */,
+				EF773913278A6F8B004568BD /* XCTestCase+Snapshot.swift in Sources */,
 				EF773911278A6F33004568BD /* UIViewController+Snapshot.swift in Sources */,
 				EF77390D278A698A004568BD /* UIImage+TestHelpers.swift in Sources */,
 			);
