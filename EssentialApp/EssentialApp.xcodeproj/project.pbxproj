@@ -11,7 +11,6 @@
 		EF7738D0278A16EC004568BD /* FeedImageDataLoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738CF278A16EC004568BD /* FeedImageDataLoaderSpy.swift */; };
 		EF7738D2278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738D1278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift */; };
 		EF7738D6278A1ABF004568BD /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738D5278A1ABF004568BD /* FeedImageDataLoaderCacheDecorator.swift */; };
-		EF7738E6278A2BC2004568BD /* DebuggingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738E5278A2BC2004568BD /* DebuggingSceneDelegate.swift */; };
 		EF7738E8278A50E0004568BD /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738E7278A50E0004568BD /* SceneDelegateTests.swift */; };
 		EF7738EF278A54E8004568BD /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738ED278A54E8004568BD /* FeedViewAdapter.swift */; };
 		EF7738F0278A54E8004568BD /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738EB278A54E8004568BD /* MainQueueDispatchDecorator.swift */; };
@@ -79,7 +78,6 @@
 		EF7738CF278A16EC004568BD /* FeedImageDataLoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderSpy.swift; sourceTree = "<group>"; };
 		EF7738D1278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
 		EF7738D5278A1ABF004568BD /* FeedImageDataLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderCacheDecorator.swift; sourceTree = "<group>"; };
-		EF7738E5278A2BC2004568BD /* DebuggingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingSceneDelegate.swift; sourceTree = "<group>"; };
 		EF7738E7278A50E0004568BD /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		EF7738E9278A54E8004568BD /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		EF7738EA278A54E8004568BD /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 			children = (
 				EF8EBFF227372CBB00866A96 /* AppDelegate.swift */,
 				EF8EBFF427372CBB00866A96 /* SceneDelegate.swift */,
-				EF7738E5278A2BC2004568BD /* DebuggingSceneDelegate.swift */,
 				EF7738EC278A54E8004568BD /* FeedUIComposer.swift */,
 				EF7738EB278A54E8004568BD /* MainQueueDispatchDecorator.swift */,
 				EF7738EA278A54E8004568BD /* FeedImageDataLoaderPresentationAdapter.swift */,
@@ -335,7 +332,6 @@
 				EF8EBFF327372CBB00866A96 /* AppDelegate.swift in Sources */,
 				EF7BE438273814F300C3A9B2 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				EF8C2552275115CE0000E12B /* FeedLoaderCacheDecorator.swift in Sources */,
-				EF7738E6278A2BC2004568BD /* DebuggingSceneDelegate.swift in Sources */,
 				EF8EBFF527372CBB00866A96 /* SceneDelegate.swift in Sources */,
 				EF7738F0278A54E8004568BD /* MainQueueDispatchDecorator.swift in Sources */,
 				EF7738F3278A54E8004568BD /* FeedLoaderPresentationAdapter.swift in Sources */,
