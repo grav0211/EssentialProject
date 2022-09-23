@@ -9,7 +9,7 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.agrav065.EssentialApp</key>
-		<string>Essential App (Production)</string>
+		<string>App Store</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>iPhone Distribution</string>
