@@ -1,8 +1,11 @@
 # Essential Feed App – Image Feed Feature
 
-![](https://github.com/essentialdevelopercom/essential-feed-case-study/workflows/CI-iOS/badge.svg)
+![](https://github.com/grav0211/EssentialProject/workflows/CI-iOS/badge.svg)
 
-![](https://github.com/essentialdevelopercom/essential-feed-case-study/workflows/CI-macOS/badge.svg)
+![](https://github.com/grav0211/EssentialProject/workflows/CI-macOS/badge.svg)
+
+![](https://github.com/grav0211/EssentialProject/workflows/Deploy/badge.svg)
+
 
 ## BDD Specs
 
