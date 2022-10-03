@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A5B358C28EB04DF007E8F6E /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5B358B28EB04DF007E8F6E /* CombineHelpers.swift */; };
 		EF7738D0278A16EC004568BD /* FeedImageDataLoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738CF278A16EC004568BD /* FeedImageDataLoaderSpy.swift */; };
 		EF7738D2278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738D1278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift */; };
 		EF7738E8278A50E0004568BD /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738E7278A50E0004568BD /* SceneDelegateTests.swift */; };
@@ -67,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A5B358B28EB04DF007E8F6E /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		EF7738CF278A16EC004568BD /* FeedImageDataLoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderSpy.swift; sourceTree = "<group>"; };
 		EF7738D1278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
 		EF7738E7278A50E0004568BD /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
@@ -168,16 +170,17 @@
 			isa = PBXGroup;
 			children = (
 				EF8EBFF227372CBB00866A96 /* AppDelegate.swift */,
-				EF8EBFF427372CBB00866A96 /* SceneDelegate.swift */,
-				EF7738EC278A54E8004568BD /* FeedUIComposer.swift */,
+				EF8EBFFB27372CBD00866A96 /* Assets.xcassets */,
+				1A5B358B28EB04DF007E8F6E /* CombineHelpers.swift */,
 				EF7738EA278A54E8004568BD /* FeedImageDataLoaderPresentationAdapter.swift */,
 				EF7738E9278A54E8004568BD /* FeedLoaderPresentationAdapter.swift */,
+				EF7738EC278A54E8004568BD /* FeedUIComposer.swift */,
 				EF7738ED278A54E8004568BD /* FeedViewAdapter.swift */,
-				EF7738EE278A54E8004568BD /* WeakRefVirtualProxy.swift */,
-				EF8EBFF627372CBB00866A96 /* ViewController.swift */,
-				EF8EBFFB27372CBD00866A96 /* Assets.xcassets */,
-				EF8EBFFD27372CBD00866A96 /* LaunchScreen.storyboard */,
 				EF8EC00027372CBD00866A96 /* Info.plist */,
+				EF8EBFFD27372CBD00866A96 /* LaunchScreen.storyboard */,
+				EF8EBFF427372CBB00866A96 /* SceneDelegate.swift */,
+				EF8EBFF627372CBB00866A96 /* ViewController.swift */,
+				EF7738EE278A54E8004568BD /* WeakRefVirtualProxy.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			files = (
 				EF7738F2278A54E8004568BD /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				EF7738F1278A54E8004568BD /* WeakRefVirtualProxy.swift in Sources */,
+				1A5B358C28EB04DF007E8F6E /* CombineHelpers.swift in Sources */,
 				EF8EBFF727372CBB00866A96 /* ViewController.swift in Sources */,
 				EF8EBFF327372CBB00866A96 /* AppDelegate.swift in Sources */,
 				EF8EBFF527372CBB00866A96 /* SceneDelegate.swift in Sources */,
