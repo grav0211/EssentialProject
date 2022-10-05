@@ -32,7 +32,6 @@
 		1A9EE0622611270C004EBD03 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC716DB25D21DC0008BD1C2 /* XCTestCase+MemoryLeakTracking.swift */; };
 		1A9EE067261128CC004EBD03 /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77246225E3430D00691D74 /* FeedCacheTestHelpers.swift */; };
 		1A9EE06C261128D5004EBD03 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77246725E3439100691D74 /* SharedTestHelpers.swift */; };
-		1AB6544527121D6D00F10A91 /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6544427121D6D00F10A91 /* HTTPClientSpy.swift */; };
 		1AB6544A2712288000F10A91 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB654492712288000F10A91 /* HTTPURLResponse+StatusCode.swift */; };
 		1AB6544C271228E000F10A91 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6544B271228E000F10A91 /* URLProtocolStub.swift */; };
 		1ABEF82D28EDB0FC0041CC2C /* FeedImageDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEF82C28EDB0FC0041CC2C /* FeedImageDataMapper.swift */; };
@@ -171,7 +170,6 @@
 		1A85CAA6261A0C4D00F219D2 /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A85CAAD261A0C4D00F219D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A8E8B3D2659736300632F98 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
-		1AB6544427121D6D00F10A91 /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		1AB654492712288000F10A91 /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		1AB6544B271228E000F10A91 /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
 		1ABEF82C28EDB0FC0041CC2C /* FeedImageDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataMapper.swift; sourceTree = "<group>"; };
@@ -323,14 +321,6 @@
 			path = "Shared API";
 			sourceTree = "<group>";
 		};
-		1A15E77F28EC458400AD6678 /* Shared API */ = {
-			isa = PBXGroup;
-			children = (
-				1A15E78128EC45C700AD6678 /* Helpers */,
-			);
-			path = "Shared API";
-			sourceTree = "<group>";
-		};
 		1A15E78028EC458B00AD6678 /* Shared API Infra */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,14 +328,6 @@
 				1AC716D425D205DB008BD1C2 /* URLSessionHTTPClientTests.swift */,
 			);
 			path = "Shared API Infra";
-			sourceTree = "<group>";
-		};
-		1A15E78128EC45C700AD6678 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				1AB6544427121D6D00F10A91 /* HTTPClientSpy.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		1A15E78228EC45D800AD6678 /* Helpers */ = {
@@ -573,7 +555,6 @@
 				1AC716DA25D21D91008BD1C2 /* Helpers */,
 				1A15E78428EC46B600AD6678 /* Image Comments API */,
 				1AE1E02825CE1B03006EFDFC /* Info.plist */,
-				1A15E77F28EC458400AD6678 /* Shared API */,
 				1A15E78028EC458B00AD6678 /* Shared API Infra */,
 			);
 			path = EssentialFeedTests;
@@ -996,7 +977,6 @@
 				1AC716D525D205DB008BD1C2 /* URLSessionHTTPClientTests.swift in Sources */,
 				1ADDD61B26002C3700024FE4 /* CoreDataFeedStoreTests.swift in Sources */,
 				1ACD9B422713571600BB6115 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */,
-				1AB6544527121D6D00F10A91 /* HTTPClientSpy.swift in Sources */,
 				1A15E77928EC3F7100AD6678 /* ImageCommentsMapperTests.swift in Sources */,
 				1A77245225E1E11100691D74 /* FeedStoreSpy.swift in Sources */,
 				1A77246825E3439100691D74 /* SharedTestHelpers.swift in Sources */,
