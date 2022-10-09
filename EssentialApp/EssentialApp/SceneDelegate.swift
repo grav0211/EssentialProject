@@ -108,7 +108,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let url = FeedEndpoint.get.url(baseURL: baseURL)
         
         return httpClient
-            .getPublisher(url: remoteURL)
+            .getPublisher(url: url)
             .tryMap(FeedItemsMapper.map)
             .caching(to: localFeedLoader)
             .fallback(to: localFeedLoader.loadPublisher)
