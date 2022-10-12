@@ -13,8 +13,6 @@
 		1ABEF89828F2F2060041CC2C /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEF89628F2F1960041CC2C /* CommentsUIComposer.swift */; };
 		1ABEF89A28F340430041CC2C /* FeedUIIntegrationTests+Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEF89928F340430041CC2C /* FeedUIIntegrationTests+Assertions.swift */; };
 		1ABEF8B428F58A6D0041CC2C /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEF8B328F58A6D0041CC2C /* NullStore.swift */; };
-		EF7738D0278A16EC004568BD /* FeedImageDataLoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738CF278A16EC004568BD /* FeedImageDataLoaderSpy.swift */; };
-		EF7738D2278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738D1278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift */; };
 		EF7738E8278A50E0004568BD /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738E7278A50E0004568BD /* SceneDelegateTests.swift */; };
 		EF7738EF278A54E8004568BD /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738ED278A54E8004568BD /* FeedViewAdapter.swift */; };
 		EF7738F1278A54E8004568BD /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7738EE278A54E8004568BD /* WeakRefVirtualProxy.swift */; };
@@ -75,8 +73,6 @@
 		1ABEF89628F2F1960041CC2C /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
 		1ABEF89928F340430041CC2C /* FeedUIIntegrationTests+Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Assertions.swift"; sourceTree = "<group>"; };
 		1ABEF8B328F58A6D0041CC2C /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
-		EF7738CF278A16EC004568BD /* FeedImageDataLoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderSpy.swift; sourceTree = "<group>"; };
-		EF7738D1278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
 		EF7738E7278A50E0004568BD /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		EF7738E9278A54E8004568BD /* LoadResourcePresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresentationAdapter.swift; sourceTree = "<group>"; };
 		EF7738EC278A54E8004568BD /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
@@ -131,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				EF7738F6278A5551004568BD /* FeedImageCell+TestHelpers.swift */,
-				EF7738CF278A16EC004568BD /* FeedImageDataLoaderSpy.swift */,
 				1ABEF89928F340430041CC2C /* FeedUIIntegrationTests+Assertions.swift */,
 				1ABEF82A28EDAC940041CC2C /* FeedUIIntegrationTests+LoaderSpy.swift */,
 				EF773905278A5EE4004568BD /* HTTPClientStub.swift */,
@@ -142,7 +137,6 @@
 				EF7738FA278A5552004568BD /* UIImage+TestHelpers.swift */,
 				EF7738F5278A5551004568BD /* UIRefreshControl+TestHelpers.swift */,
 				EF773914278A735B004568BD /* UIView+TestHelpers.swift */,
-				EF7738D1278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift */,
 				EF7BE43E27381F4B00C3A9B2 /* XCTestCase+MemoryLeakTracking.swift */,
 			);
 			path = Helpers;
@@ -333,12 +327,10 @@
 				1ABEF82B28EDAC940041CC2C /* FeedUIIntegrationTests+LoaderSpy.swift in Sources */,
 				EF773902278A55B0004568BD /* FeedUIIntegrationTests.swift in Sources */,
 				1ABEF89A28F340430041CC2C /* FeedUIIntegrationTests+Assertions.swift in Sources */,
-				EF7738D2278A17C8004568BD /* XCTestCase+FeedImageDataLoader.swift in Sources */,
 				EF773904278A57FE004568BD /* FeedAcceptanceTests.swift in Sources */,
 				EF7738FD278A5552004568BD /* ListViewController+TestHelpers.swift in Sources */,
 				EF773906278A5EE4004568BD /* HTTPClientStub.swift in Sources */,
 				EF7738E8278A50E0004568BD /* SceneDelegateTests.swift in Sources */,
-				EF7738D0278A16EC004568BD /* FeedImageDataLoaderSpy.swift in Sources */,
 				EF7738FC278A5552004568BD /* FeedImageCell+TestHelpers.swift in Sources */,
 				EF773915278A735B004568BD /* UIView+TestHelpers.swift in Sources */,
 				EF7738FF278A5552004568BD /* UIButton+TestHelpers.swift in Sources */,
