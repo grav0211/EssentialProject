@@ -1,13 +1,8 @@
-# Essential Feed App – Image Feed Feature
+# Essential App
 
-![](https://github.com/grav0211/EssentialProject/workflows/CI-iOS/badge.svg)
+![](https://github.com/grav0211/EssentialProject/workflows/CI-iOS/badge.svg) ![](https://github.com/grav0211/EssentialProject/workflows/CI-macOS/badge.svg) ![](https://github.com/grav0211/EssentialProject/workflows/Deploy/badge.svg)
 
-![](https://github.com/grav0211/EssentialProject/workflows/CI-macOS/badge.svg)
-
-![](https://github.com/grav0211/EssentialProject/workflows/Deploy/badge.svg)
-
-
-## BDD Specs
+## Image Feed Feature Specs
 
 ### Story: Customer requests to see their image feed
 
@@ -110,7 +105,7 @@ Given the customer doesn't have connectivity
 4. System creates image feed from cached data.
 5. System delivers image feed.
 
-#### Retrieval Error course (sad path):
+#### Retrieval error course (sad path):
 1. System delivers error.
 
 #### Expired cache course (sad path): 
@@ -149,7 +144,7 @@ Given the customer doesn't have connectivity
 2. System retrieves feed data from cache.
 3. System validates cache is less than seven days old.
 
-#### Retrieval Error course (sad path):
+#### Retrieval error course (sad path):
 1. System deletes cache.
 
 #### Expired cache course (sad path): 
@@ -178,55 +173,169 @@ Given the customer doesn't have connectivity
 
 ---
 
+### Cache Feed Image Data Use Case
+
+#### Data:
+- Image Data
+
+#### Primary course (happy path):
+1. Execute "Save Image Data" command with above data.
+2. System caches image data.
+3. System delivers success message.
+
+#### Saving error course (sad path):
+1. System delivers error.
+
+---
+
 ## Flowchart
 
 ![Feed Loading Feature](feed_flowchart.png)
-
-## Architecture
-
-![Feed Loading Feature](feed_architecture.png)
 
 ## Model Specs
 
 ### Feed Image
 
 | Property      | Type                |
-|--------------------|---------------------|
-| `id`                    | `UUID`              |
+|---------------|---------------------|
+| `id`          | `UUID`              |
 | `description` | `String` (optional) |
 | `location`    | `String` (optional) |
-| `url`    | `URL`               |
+| `url`	        | `URL`               |
 
 ### Payload contract
 
 ```
-GET *url* (TBD)
+GET /feed
 
 200 RESPONSE
 
 {
-    "items": [
-        {
-            "id": "a UUID",
-            "description": "a description",
-            "location": "a location",
-            "image": "https://a-image.url",
-        },
-        {
-            "id": "another UUID",
-            "description": "another description",
-            "image": "https://another-image.url"
-        },
-        {
-            "id": "even another UUID",
-            "location": "even another location",
-            "image": "https://even-another-image.url"
-        },
-        {
-            "id": "yet another UUID",
-            "image": "https://yet-another-image.url"
-        }
-        ...
-    ]
+	"items": [
+		{
+			"id": "a UUID",
+			"description": "a description",
+			"location": "a location",
+			"image": "https://a-image.url",
+		},
+		{
+			"id": "another UUID",
+			"description": "another description",
+			"image": "https://another-image.url"
+		},
+		{
+			"id": "even another UUID",
+			"location": "even another location",
+			"image": "https://even-another-image.url"
+		},
+		{
+			"id": "yet another UUID",
+			"image": "https://yet-another-image.url"
+		}
+		...
+	]
 }
 ```
+
+---
+
+## Image Comments Feature Specs
+
+### Story: Customer requests to see image comments
+
+### Narrative
+
+```
+As an online customer
+I want the app to load image commments
+So I can see how people are engaging with images in my feed
+```
+
+#### Scenarios (Acceptance criteria)
+
+```
+Given the customer has connectivity
+ When the customer requests to see comments on an image
+ Then the app should display all comments for that image
+```
+
+```
+Given the customer doesn't have connectivity
+ When the customer requests to see comments on an image
+ Then the app should display an error message
+```
+
+## Use Cases
+
+### Load Image Comments From Remote Use Case
+
+#### Data:
+- ImageID
+
+#### Primary course (happy path):
+1. Execute "Load Image Comments" command with above data.
+2. System loads data from remote service.
+3. System validates data.
+4. System creates comments from valid data.
+5. System delivers comments.
+
+#### Invalid data – error course (sad path):
+1. System delivers invalid data error.
+
+#### No connectivity – error course (sad path):
+1. System delivers connectivity error.
+
+---
+
+## Model Specs
+
+### Image Comment
+
+| Property          | Type                    |
+|-------------------|-------------------------|
+| `id`              | `UUID`                  |
+| `message` 	    | `String`			      |
+| `created_at`      | `Date` (ISO8601 String) |
+| `author` 			| `CommentAuthorObject`   |
+
+### Image Comment Author
+
+| Property          | Type                |
+|-------------------|---------------------|
+| `username` 	    | `String`			  |
+
+### Payload contract
+
+```
+GET /image/{image-id}/comments
+
+2xx RESPONSE
+
+{
+	"items": [
+		{
+			"id": "a UUID",
+			"message": "a message",
+			"created_at": "2020-05-20T11:24:59+0000",
+			"author": {
+				"username": "a username"
+			}
+		},
+		{
+			"id": "another UUID",
+			"message": "another message",
+			"created_at": "2020-05-19T14:23:53+0000",
+			"author": {
+				"username": "another username"
+			}
+		},
+		...
+	]
+}
+```
+
+---
+
+## App Architecture
+
+![](architecture.png)
